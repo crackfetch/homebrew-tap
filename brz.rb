@@ -5,21 +5,21 @@
 class Brz < Formula
   desc "Browser automation CLI for humans and LLM agents"
   homepage "https://github.com/crackfetch/brainstorm"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/crackfetch/brainstorm/releases/download/v0.3.0/brainstorm_0.3.0_darwin_amd64.tar.gz"
-      sha256 "8ca15f481d99c0da1ffb02d6c0a30e6b80d9f74c66dbcf3832574319afc53be9"
+      url "https://github.com/crackfetch/brainstorm/releases/download/v0.4.0/brainstorm_0.4.0_darwin_amd64.tar.gz"
+      sha256 "33b4ddf3f407439c7ab3171d4d92f87c9a3d937770abc5d7d5a175f551ea5460"
 
       define_method(:install) do
         bin.install "brz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/crackfetch/brainstorm/releases/download/v0.3.0/brainstorm_0.3.0_darwin_arm64.tar.gz"
-      sha256 "30910a0c3372b7a249c8397a0728bfb4d72838edb728561edb2870c9aaf17573"
+      url "https://github.com/crackfetch/brainstorm/releases/download/v0.4.0/brainstorm_0.4.0_darwin_arm64.tar.gz"
+      sha256 "46e734fa0ed172a603ce61c056c687308008c89bee7dc6b4cb3425969ee0a72c"
 
       define_method(:install) do
         bin.install "brz"
@@ -29,15 +29,15 @@ class Brz < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crackfetch/brainstorm/releases/download/v0.3.0/brainstorm_0.3.0_linux_amd64.tar.gz"
-      sha256 "079cff2a540b66b04f7d7b69fa943949539f388822b8cca5103fb70d873d005e"
+      url "https://github.com/crackfetch/brainstorm/releases/download/v0.4.0/brainstorm_0.4.0_linux_amd64.tar.gz"
+      sha256 "d43a7188e542d771619b5809deeb53b96377ebde09f863ac1650c797e4e2e0b9"
       define_method(:install) do
         bin.install "brz"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crackfetch/brainstorm/releases/download/v0.3.0/brainstorm_0.3.0_linux_arm64.tar.gz"
-      sha256 "8b9f82cc3e7581c98d649a2e4bd24188c9215c3619e8dc7fd6f9bbbe55e87d2c"
+      url "https://github.com/crackfetch/brainstorm/releases/download/v0.4.0/brainstorm_0.4.0_linux_arm64.tar.gz"
+      sha256 "88ef2d5415c850f06ba325b0d3fae4a8ceb3bfea3ed2630f285db5a36fb59a0f"
       define_method(:install) do
         bin.install "brz"
       end
